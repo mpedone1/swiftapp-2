@@ -22,24 +22,40 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs4-5x-JWW">
-                                <rect key="frame" x="177" y="252" width="60" height="30"/>
+                                <rect key="frame" x="177" y="218" width="60" height="30"/>
                                 <state key="normal" title="Push me"/>
                                 <connections>
                                     <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yYg-01-Ies"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HbY-Zf-knQ">
+                                <rect key="frame" x="191" y="271" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ldp-08-Crj">
+                                <rect key="frame" x="191" y="332" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Bs4-5x-JWW" firstAttribute="top" secondItem="8SQ-eG-DEC" secondAttribute="bottom" constant="87" id="Fne-KS-ViR"/>
+                            <constraint firstItem="Bs4-5x-JWW" firstAttribute="top" secondItem="8SQ-eG-DEC" secondAttribute="bottom" constant="53" id="Fne-KS-ViR"/>
+                            <constraint firstItem="ldp-08-Crj" firstAttribute="top" secondItem="HbY-Zf-knQ" secondAttribute="bottom" constant="28" id="Iqz-k7-s6Q"/>
                             <constraint firstItem="8SQ-eG-DEC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IsY-j7-V3W"/>
                             <constraint firstItem="8SQ-eG-DEC" firstAttribute="centerX" secondItem="Bs4-5x-JWW" secondAttribute="centerX" id="LaV-0g-foo"/>
                             <constraint firstItem="8SQ-eG-DEC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="SE2-sn-Xvw"/>
+                            <constraint firstItem="HbY-Zf-knQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nnR-rz-Mky"/>
+                            <constraint firstItem="HbY-Zf-knQ" firstAttribute="firstBaseline" secondItem="Bs4-5x-JWW" secondAttribute="baseline" constant="54" id="qat-b5-cX3"/>
+                            <constraint firstItem="ldp-08-Crj" firstAttribute="leading" secondItem="HbY-Zf-knQ" secondAttribute="leading" id="ysT-mW-iuP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Text1" destination="HbY-Zf-knQ" id="2wW-7p-b4z"/>
                         <outlet property="TheLabel" destination="8SQ-eG-DEC" id="svG-Sc-AaR"/>
+                        <outlet property="text2" destination="ldp-08-Crj" id="95Y-fS-uu3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
