@@ -8,16 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
     
     @IBOutlet weak var TheLabel: UILabel!
     
     @IBOutlet weak var text1: UITextField!
     
     @IBOutlet weak var text2: UITextField!
-    @IBAction func ButtonTapped(_ sender: Any) {
-        TheLabel.text = "Answer is...\(Double (text1.text!)! +  Double (text2.text!)!)"
-    }
-    }
-
-
+    @IBAction func ButtonTapped(_ sender: Any)  {
+        let addition = false
+        
+        if addition {
+            TheLabel.text = "Answer is...\(Double (text1.text!)! +  Double (text2.text!)!)"
+        }
+        else  {
+            TheLabel.text = "Answer is...\(Double (text1.text!)! -  Double (text2.text!)!)"
+        }
+}
+}
